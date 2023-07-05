@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.btnexit = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btndevide = new Guna.UI2.WinForms.Guna2Button();
             this.btnplus = new Guna.UI2.WinForms.Guna2Button();
@@ -46,27 +44,11 @@
             this.btnfour = new Guna.UI2.WinForms.Guna2Button();
             this.btnclear = new Guna.UI2.WinForms.Guna2Button();
             this.btneight = new Guna.UI2.WinForms.Guna2Button();
-            this.btndot = new Guna.UI2.WinForms.Guna2Button();
             this.btntwo = new Guna.UI2.WinForms.Guna2Button();
             this.btnfive = new Guna.UI2.WinForms.Guna2Button();
             this.txtstore = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtresualt = new Guna.UI2.WinForms.Guna2TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.btnexit)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnexit
-            // 
-            this.btnexit.Image = ((System.Drawing.Image)(resources.GetObject("btnexit.Image")));
-            this.btnexit.ImageRotate = 0F;
-            this.btnexit.Location = new System.Drawing.Point(278, 8);
-            this.btnexit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnexit.Name = "btnexit";
-            this.btnexit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnexit.Size = new System.Drawing.Size(43, 45);
-            this.btnexit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnexit.TabIndex = 0;
-            this.btnexit.TabStop = false;
-            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
             // 
             // label1
             // 
@@ -157,12 +139,12 @@
             this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.guna2Button4.ForeColor = System.Drawing.Color.DarkOrange;
-            this.guna2Button4.Location = new System.Drawing.Point(175, 388);
+            this.guna2Button4.Location = new System.Drawing.Point(110, 388);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.BorderRadius = 8;
             this.guna2Button4.ShadowDecoration.Color = System.Drawing.Color.DarkOrange;
             this.guna2Button4.ShadowDecoration.Enabled = true;
-            this.guna2Button4.Size = new System.Drawing.Size(116, 45);
+            this.guna2Button4.Size = new System.Drawing.Size(181, 45);
             this.guna2Button4.TabIndex = 5;
             this.guna2Button4.Text = "=";
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
@@ -404,27 +386,6 @@
             this.btneight.Text = "8";
             this.btneight.Click += new System.EventHandler(this.btneight_Click);
             // 
-            // btndot
-            // 
-            this.btndot.BackColor = System.Drawing.Color.Transparent;
-            this.btndot.BorderRadius = 8;
-            this.btndot.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btndot.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btndot.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btndot.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btndot.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btndot.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btndot.ForeColor = System.Drawing.Color.DarkOrange;
-            this.btndot.Location = new System.Drawing.Point(109, 388);
-            this.btndot.Name = "btndot";
-            this.btndot.ShadowDecoration.BorderRadius = 8;
-            this.btndot.ShadowDecoration.Color = System.Drawing.Color.DarkOrange;
-            this.btndot.ShadowDecoration.Enabled = true;
-            this.btndot.Size = new System.Drawing.Size(55, 45);
-            this.btndot.TabIndex = 15;
-            this.btndot.Text = ".";
-            this.btndot.Click += new System.EventHandler(this.btndot_Click);
-            // 
             // btntwo
             // 
             this.btntwo.BackColor = System.Drawing.Color.Transparent;
@@ -527,7 +488,6 @@
             this.Controls.Add(this.btnfour);
             this.Controls.Add(this.btnclear);
             this.Controls.Add(this.btneight);
-            this.Controls.Add(this.btndot);
             this.Controls.Add(this.btntwo);
             this.Controls.Add(this.btnfive);
             this.Controls.Add(this.btnnine);
@@ -540,7 +500,6 @@
             this.Controls.Add(this.btnplus);
             this.Controls.Add(this.btndevide);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnexit);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -548,15 +507,12 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.btnexit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2CirclePictureBox btnexit;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button btndevide;
         private Guna.UI2.WinForms.Guna2Button btnplus;
@@ -573,7 +529,6 @@
         private Guna.UI2.WinForms.Guna2Button btnfour;
         private Guna.UI2.WinForms.Guna2Button btnclear;
         private Guna.UI2.WinForms.Guna2Button btneight;
-        private Guna.UI2.WinForms.Guna2Button btndot;
         private Guna.UI2.WinForms.Guna2Button btntwo;
         private Guna.UI2.WinForms.Guna2Button btnfive;
         private Guna.UI2.WinForms.Guna2TextBox txtstore;
